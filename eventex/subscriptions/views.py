@@ -31,7 +31,7 @@ def create(request):
                {'subscription': subscription})
 
 
-    return HttpResponseRedirect('/inscricao/{}/'.format(subscription.pk))
+    return HttpResponseRedirect('/inscricao/{}/'.format(subscription.uniqueId))
 
 
 def new(request):
@@ -39,9 +39,9 @@ def new(request):
                   {'form': SubscriptionForm()})
 
 
-def detail(request, pk):
+def detail(request, uniqueId):
     try:
-        subscription = Subscription.objects.get(pk=pk)
+        subscription = Subscription.objects.get(uniqueId=uniqueId)
     except Subscription.DoesNotExist:
         raise Http404
 
