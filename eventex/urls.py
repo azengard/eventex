@@ -21,6 +21,6 @@ from eventex.subscriptions.views import subscribe, detail
 urlpatterns = [
     url(r'^$', home),
     url(r'^inscricao/$', subscribe),
-    url(r'^inscricao/([\w\-]+)/$', detail),
+    url(r'^inscricao/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/$', detail),
     url(r'^admin/', include(admin.site.urls)),
 ]
