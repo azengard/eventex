@@ -1,6 +1,6 @@
 # Eventex
 
-Sistema de Eventos encomendado pela morena.
+Sistema de Eventos para estudo de Django com TDD e CI.
 
 [![Build Status](https://travis-ci.org/azengard/eventex.svg?branch=master)](https://travis-ci.org/azengard/eventex)
 [![Code Health](https://landscape.io/github/azengard/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/azengard/eventex/master)
